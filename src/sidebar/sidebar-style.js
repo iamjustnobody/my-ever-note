@@ -1,6 +1,6 @@
 const styles = theme => ({
     root: {
-        backgroundColor: 'green',//theme.palette.background.paper,
+        backgroundColor: theme.palette.background.paper,
         height: 'calc(100% - 35px)',
         position: 'absolute',
         left: '0',
@@ -51,8 +51,14 @@ const styles = theme => ({
         width: '100%',
         backgroundColor: '#28787c',
         borderRadius: '0px',
-        color: 'white'
-    }
+        color: 'white',
+        '&:hover': {
+            backgroundColor: '#28787c',
+            opacity:0.5,
+            color:'black',
+            fontWeight:'bold'
+        }
+    },
 });
 
 export default styles;

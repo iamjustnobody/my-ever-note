@@ -9,21 +9,22 @@ import {UnstyledComponent} from './test';
 const firebase=require('firebase');
 //const firebase=require('firebase/app');
 require('firebase/firestore');
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyA9c329N6GV5SBJuh0GEuSRpW5DRX3YJ7g",
-    authDomain: "evernote-clone-9a1da.firebaseapp.com",
-    projectId: "evernote-clone-9a1da",
-    storageBucket: "evernote-clone-9a1da.appspot.com",
-    messagingSenderId: "349396339997",
-    appId: "1:349396339997:web:b54a0cf2090391ad85a5f4",
-    measurementId: "G-V56Z7SG3ZV"
+var firebaseConfig = {
+    apiKey: "AIzaSyAydLau2b78bAhoJEI_YDjc7WmXEITUbHw",
+    authDomain: "chatnotes-f3d5c.firebaseapp.com",
+    projectId: "chatnotes-f3d5c",
+    storageBucket: "chatnotes-f3d5c.appspot.com",
+    messagingSenderId: "1071373976676",
+    appId: "1:1071373976676:web:cc493c11b80a3f3dcd8b71",
+    measurementId: "G-E8F43VSWNK"
 };
 // Initialize Firebase
-//firebase.initializeApp(firebaseConfig);
 firebase.default.initializeApp(firebaseConfig);
-//firebase.analytics();
+firebase.default.analytics();
+
 
 ReactDOM.render(
   <React.StrictMode>
